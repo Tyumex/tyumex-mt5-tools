@@ -1,99 +1,105 @@
 # Tyumex Trading Systems — MT5 Tools (Free 1-Month Trial)
 
-**RU below / Русское описание ниже**
+**[Русская версия → README.ru.md](README.ru.md)**
 
-Professional MetaTrader 5 tools: non-repainting reaction zones, one-click trade assistant, and seconds/Renko/Range charts. Compiled `.ex5` trial builds are published in [Releases](../../releases) — free, works until **2026-08-05** (broker time). Full version with account binding: [@Tyumex_bot](https://t.me/Tyumex_bot).
+Professional MetaTrader 5 tools: a **non-repainting reversal-zones indicator**, a one-click **trade assistant**, and **seconds / Renko / Range charts**. Compiled `.ex5` trial builds are published in [Releases](../../releases) — free, work on any MT5 account until **2026-08-05** (broker time). Full version with account binding: [@Tyumex_bot](https://t.me/Tyumex_bot).
 
 ![Tyumex](docs/hero.png)
 
 ---
 
-## Продукты
+## From the author
 
-### 1. Tyumex Zones — индикатор зон реакции
+I'm releasing my indicator with a free trial because I want feedback. I built it for myself and wasn't thinking about selling it. But since it works — let people try it.
 
-Зоны, которые видны заранее и **не перерисовываются задним числом**.
+I've been trading for 7 years, 3 of them very actively, and the last year in stable, tangible profit. Over that time I went through everything: used it, threw it away, tried again, threw it away again. 99% of what is commonly called "trading" — indicators, EAs, courses, brokers — is at best an illusion of control.
 
-- построение в реальном времени;
-- работает на валютах, фьючерсах, акциях и крипто;
-- лучше всего раскрывается на M1;
-- учитывает сессии Asia / Europe / America и ключевые уровни;
-- алерты на касание и пробой зоны;
-- поддержка Renko / секундных / кастомных графиков.
+What actually works, I found myself — by watching the chart for hours, days, years. The market always moves by the same laws. Only two elements matter: the **place** where price can reverse, and the **moment** — how exactly it reverses. When both align, the trade is right. There is nothing else.
+
+This indicator gives you the **place**. Trade those zones the way you know how. The entry moment is a separate topic — we'll get to it.
+
+---
+
+## Products
+
+### 1. Tyumex Zones — reversal zones indicator
+
+Zones where price is likely to reverse. Visible in advance and **never repainted**.
+
+- built in real time, no repainting, no backfitting;
+- works on any instrument: forex, futures, stocks, crypto;
+- shines on M1 and scalping;
+- session-aware (Asia / Europe / America) with key levels;
+- alerts on zone touch and breakout;
+- works on Renko / seconds / custom charts;
+- available for MetaTrader 5, Tiger.Trade and TradingView (this repo ships the MT5 build; TradingView/Tiger access via [@Tyumex_bot](https://t.me/Tyumex_bot)).
 
 ![Tyumex Zones](docs/zones_full.png)
 
-### 2. Trade Expert — торговый помощник
+### 2. Trade Expert — trade assistant
 
-Помогает держать торговый сценарий в фокусе и спокойнее исполнять сетап.
+Keeps your trading scenario in focus and helps execute the setup calmly.
 
-- вход в один клик с авторасчётом лота от риска;
-- стоп под экстремум свечи, тейк в R, частичная фиксация;
-- автобезубыток и Safe Mode для дисциплины;
-- работа по структуре, а не по эмоциям.
+- one-click entries with risk-based lot sizing;
+- stop-loss at candle extremum, take-profit in R, partial close;
+- auto-breakeven and Safe Mode for discipline;
+- trade the structure, not the emotions.
 
-Это помощник к вашей системе, а не «магическая кнопка прибыли».
+It is an assistant for your system, not a "magic profit button".
 
 ![Trade Expert](docs/expert_full.png)
 
-### 3. Tyumex Second Charts — секундные / Renko / Range графики
+### 3. Tyumex Second Charts — seconds / Renko / Range charts
 
-Графики, которых нет у брокера: секунды, Renko и Range на одном движке.
+Charts your broker doesn't give you: seconds, Renko and Range on one engine.
 
-- секундные свечи (S5, S10, S20…), Renko и Range;
-- переключение режима и размера прямо с панели на графике;
-- в разы больше деталей и сетапов внутри минуты;
-- строится через кастомные символы MT5 в реальном времени;
-- глубина истории задаётся в часах.
+- second-based candles (S5, S10, S20…), Renko and Range bars;
+- switch mode and size right from the on-chart panel;
+- far more detail and setups inside every minute;
+- built via MT5 custom symbols in real time;
+- history depth configurable in hours.
 
 ![Second Charts](docs/seconds_full.png)
 
 ---
 
-## Скачать (триал до 05.08.2026)
+## Download (trial until 2026-08-05)
 
-Скомпилированные `.ex5` — в разделе **[Releases](../../releases)**. Исходный код не публикуется.
+Compiled `.ex5` files are in **[Releases](../../releases)**. Source code is not published.
 
-Триал-версии работают на **любом счёте MT5** до `2026-08-05 23:59` (время брокера). После этой даты продукт покажет экран продления — новую версию можно получить в [@Tyumex_bot](https://t.me/Tyumex_bot) (7 дней с привязкой к счёту, для партнёров Tickmill — 2 месяца).
+Trial builds run on **any MT5 account** until `2026-08-05 23:59` (broker time). After that date the product shows a renewal screen — get a new build from [@Tyumex_bot](https://t.me/Tyumex_bot) (7 days bound to your account; 2 months for Tickmill partners).
 
-## Установка в MetaTrader 5
+## Installation (MetaTrader 5)
 
-1. В MT5: **Файл → Открыть каталог данных**.
-2. Откройте папку **MQL5**.
-3. Скопируйте файлы:
+1. In MT5: **File → Open Data Folder**.
+2. Open the **MQL5** folder.
+3. Copy the files:
    - `TyumexZones.ex5` → **MQL5\Indicators**
    - `Trade Expert.ex5` → **MQL5\Experts**
    - `TyumexSecondCharts.ex5` → **MQL5\Experts**
-4. В «Навигаторе» MT5 нажмите ПКМ → **Обновить** (или перезапустите терминал).
-5. Перетащите продукт на график:
-   - **TyumexZones** и **Trade Expert** — на график, где торгуете;
-   - **TyumexSecondCharts** — на обычный график любого таймфрейма (например M1): он сам откроет отдельный секундный/Renko/Range график, режим и размер переключаются кнопками на панели.
+4. Back in MT5, right-click in **Navigator** → **Refresh** (or restart the terminal).
+5. Drag the product onto a chart:
+   - **TyumexZones** and **Trade Expert** — onto the chart you trade;
+   - **TyumexSecondCharts** — onto a regular chart of any timeframe (e.g. M1): it opens a separate seconds/Renko/Range chart on top, controlled from the on-chart panel.
 
-Для Trade Expert и Second Charts включите **Алготрейдинг** (кнопка в панели MT5).
+For Trade Expert and Second Charts enable **Algo Trading** (button in the MT5 toolbar).
 
 ## FAQ
 
-**Почему нет исходного кода?**
-Это коммерческий продукт. В репозитории — описание и скомпилированные триал-сборки.
+**Why is there no source code?**
+This is a commercial product. The repo contains the description and compiled trial builds.
 
-**Что будет после 05.08.2026?**
-Инструмент перестанет строить разметку и покажет экран продления. Данные и терминал не затрагиваются.
+**What happens after 2026-08-05?**
+The tool stops drawing and shows a renewal screen. Your terminal and data are not affected.
 
-**Как получить полную версию?**
-Напишите в [@Tyumex_bot](https://t.me/Tyumex_bot) — бот выдаёт пробную сборку с привязкой к вашему счёту, менеджер поможет с полным доступом.
+**How do I get the full version / TradingView / Tiger.Trade?**
+Message [@Tyumex_bot](https://t.me/Tyumex_bot) — the bot issues a trial build bound to your account; the manager helps with full access and the TradingView / Tiger.Trade versions.
 
----
-
-## English summary
-
-- **Tyumex Zones** — non-repainting reaction zones indicator for MT5 (forex, futures, stocks, crypto; session-aware, alerts, works on Renko/seconds charts).
-- **Trade Expert** — trade assistant: one-click entries with risk-based lot sizing, candle-extremum SL, R-based TP, partial close, auto-breakeven, Safe Mode.
-- **Tyumex Second Charts** — seconds (S5/S10/S20…), Renko and Range charts for MT5 via real-time custom symbols, with an on-chart control panel.
-
-Trial builds in [Releases](../../releases) work on any MT5 account until **2026-08-05** (broker time). Full access: [@Tyumex_bot](https://t.me/Tyumex_bot).
+**Feedback**
+This trial exists to gather feedback — share your experience via [@Tyumex_bot](https://t.me/Tyumex_bot) or open an Issue here.
 
 ---
 
-**Contact / Контакты:** Telegram [@Tyumex_bot](https://t.me/Tyumex_bot)
+Keywords: scalping, indicator, reversal, levels, zones, price action, MT5, MetaTrader 5, Tiger.Trade, TradingView, reversal zones, non-repainting, supply and demand, support resistance, Renko, seconds chart, forex, futures, crypto.
 
 *Trading involves risk. These tools are decision-support instruments, not financial advice and not a guarantee of profit.*
