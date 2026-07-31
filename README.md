@@ -1,105 +1,122 @@
-# Tyumex Trading Systems — MT5 Tools (Free 1-Month Trial)
+# Tyumex Terminal — Standard Edition
 
-**[Русская версия → README.ru.md](README.ru.md)**
 
-Professional MetaTrader 5 tools: a **non-repainting reversal-zones indicator**, a one-click **trade assistant**, and **seconds / Renko / Range charts**. Compiled `.ex5` trial builds are published in [Releases](../../releases) — free, work on any MT5 account until **2026-08-05** (broker time). Full version with account binding: [@Tyumex_bot](https://t.me/Tyumex_bot).
+Desktop market terminal for multi-chart analysis and trading with Binance and MetaTrader 5. The Standard Edition is distributed as a ready-to-install Windows package.
 
-![Tyumex](docs/hero.png)
+TradingView-style alternative for MetaTrader 5 (MT5): a modern multi-chart trading terminal with Binance and MT5 market data, technical indicators, custom short intervals and a professional workspace.
 
----
+Keywords: TradingView alternative, TradingView-style terminal, MT5 terminal, MetaTrader 5 trading terminal, multi-chart trading terminal, Binance trading terminal.
 
-## From the author
 
-I'm releasing my indicator with a free trial because I want feedback. I built it for myself and wasn't thinking about selling it. But since it works — let people try it.
+[Русская версия → README.ru.md](README.ru.md)
 
-I've been trading for 7 years, 3 of them very actively, and the last year in stable, tangible profit. Over that time I went through everything: used it, threw it away, tried again, threw it away again. 99% of what is commonly called "trading" — indicators, EAs, courses, brokers — is at best an illusion of control.
 
-What actually works, I found myself — by watching the chart for hours, days, years. The market always moves by the same laws. Only two elements matter: the **place** where price can reverse, and the **moment** — how exactly it reverses. When both align, the trade is right. There is nothing else.
+## Get 28 days of access
 
-This indicator gives you the **place**. Trade those zones the way you know how. The entry moment is a separate topic — we'll get to it.
 
----
+Request the Standard Edition through the official Telegram bot:
 
-## Products
 
-### 1. Tyumex Zones — reversal zones indicator
+**[Open @Tyumex_bot →](https://t.me/Tyumex_bot)**
 
-Zones where price is likely to reverse. Visible in advance and **never repainted**.
 
-- built in real time, no repainting, no backfitting;
-- works on any instrument: forex, futures, stocks, crypto;
-- shines on M1 and scalping;
-- session-aware (Asia / Europe / America) with key levels;
-- alerts on zone touch and breakout;
-- works on Renko / seconds / custom charts;
-- available for MetaTrader 5, Tiger.Trade and TradingView (this repo ships the MT5 build; TradingView/Tiger access via [@Tyumex_bot](https://t.me/Tyumex_bot)).
+The bot issues access for 28 days and provides the current installer. The public GitHub repository contains the release package, screenshots, and installation notes.
 
-![Tyumex Zones](docs/zones_full.png)
 
-### 2. Trade Expert — trade assistant
+The installer itself can be opened without a code, but the terminal will not load new market data or allow new trades until a valid personal code is activated. Existing positions can still be closed and protected. The code is issued by [@Tyumex_bot](https://t.me/Tyumex_bot) and is not published in GitHub.
 
-Keeps your trading scenario in focus and helps execute the setup calmly.
 
-- one-click entries with risk-based lot sizing;
-- stop-loss at candle extremum, take-profit in R, partial close;
-- auto-breakeven and Safe Mode for discipline;
-- trade the structure, not the emotions.
+- [Download the latest GitHub Release](https://github.com/Tyumex/tyumex-mt5-tools/releases/latest)
+- Current package: `TyumexTerminalStandardSetup-1.0.30.exe`
+- SHA-256: `ACCCDD3F22DD27180CF81755AE4D345C202C8325E954FBE37DFAAC397F72BA03`
 
-It is an assistant for your system, not a "magic profit button".
 
-![Trade Expert](docs/expert_full.png)
+![Tyumex Terminal overview](docs/terminal-overview.png)
 
-### 3. Tyumex Second Charts — seconds / Renko / Range charts
 
-Charts your broker doesn't give you: seconds, Renko and Range on one engine.
+## What the terminal provides
 
-- second-based candles (S5, S10, S20…), Renko and Range bars;
-- switch mode and size right from the on-chart panel;
-- far more detail and setups inside every minute;
-- built via MT5 custom symbols in real time;
-- history depth configurable in hours.
 
-![Second Charts](docs/seconds_full.png)
+- Multiple independent chart panes in one workspace, with layouts for focused or multi-market analysis.
+- Binance Spot and Binance USD-M Futures market data.
+- Local MetaTrader 5 connections, including configurable broker terminals and symbols.
+- Native tick aggregation for short periods such as 20s, 30s, and 45s, as well as standard timeframes.
+- Candles, live streaming, volume, market depth-style levels, and session-aware chart overlays.
+- Built-in SMA, EMA, RSI, MACD, and Bollinger Bands indicators.
+- MT5 trade workflow with risk-based or fixed volume, Stop Loss, Take Profit, Safe Mode, break-even, and position closing controls.
 
----
 
-## Download (trial until 2026-08-05)
+![Tyumex Terminal workspace](docs/terminal-workspace.png)
 
-Compiled `.ex5` files are in **[Releases](../../releases)**. Source code is not published.
 
-Trial builds run on **any MT5 account** until `2026-08-05 23:59` (broker time). After that date the product shows a renewal screen — get a new build from [@Tyumex_bot](https://t.me/Tyumex_bot) (7 days bound to your account; 2 months for Tickmill partners).
+The Standard Edition is focused on a clean trading workspace and practical chart tools. It is not financial advice and does not guarantee profit.
 
-## Installation (MetaTrader 5)
 
-1. In MT5: **File → Open Data Folder**.
-2. Open the **MQL5** folder.
-3. Copy the files:
-   - `TyumexZones.ex5` → **MQL5\Indicators**
-   - `Trade Expert.ex5` → **MQL5\Experts**
-   - `TyumexSecondCharts.ex5` → **MQL5\Experts**
-4. Back in MT5, right-click in **Navigator** → **Refresh** (or restart the terminal).
-5. Drag the product onto a chart:
-   - **TyumexZones** and **Trade Expert** — onto the chart you trade;
-   - **TyumexSecondCharts** — onto a regular chart of any timeframe (e.g. M1): it opens a separate seconds/Renko/Range chart on top, controlled from the on-chart panel.
+## Installation on Windows
 
-For Trade Expert and Second Charts enable **Algo Trading** (button in the MT5 toolbar).
 
-## FAQ
+1. Download `TyumexTerminalStandardSetup-1.0.30.exe` from the [latest release](https://github.com/Tyumex/tyumex-mt5-tools/releases/latest), or request the current build from [@Tyumex_bot](https://t.me/Tyumex_bot).
+2. Run the installer. It creates a desktop shortcut and keeps the Standard Edition isolated from other Tyumex installations.
+3. Start **Tyumex Terminal Standard**.
+4. For Binance charts, choose the exchange and symbol in the chart header.
+5. For MT5 charts, open the settings, add the full path to the required 64-bit `terminal64.exe`, and keep that MT5 terminal running and logged in.
 
-**Why is there no source code?**
-This is a commercial product. The repo contains the description and compiled trial builds.
 
-**What happens after 2026-08-05?**
-The tool stops drawing and shows a renewal screen. Your terminal and data are not affected.
+The application uses bundled browser assets and does not require a separate Python or Node.js installation for normal use. Internet access is required for Binance data. MT5 data and trading require a locally installed and authorized MetaTrader 5 terminal.# Tyumex Terminal — Standard Edition
 
-**How do I get the full version / TradingView / Tiger.Trade?**
-Message [@Tyumex_bot](https://t.me/Tyumex_bot) — the bot issues a trial build bound to your account; the manager helps with full access and the TradingView / Tiger.Trade versions.
+Desktop market terminal for multi-chart analysis and trading with Binance and MetaTrader 5. The Standard Edition is distributed as a ready-to-install Windows package.
 
-**Feedback**
-This trial exists to gather feedback — share your experience via [@Tyumex_bot](https://t.me/Tyumex_bot) or open an Issue here.
+[Русская версия → README.ru.md](README.ru.md)
 
----
+## Get 28 days of access
 
-Keywords: scalping, indicator, reversal, levels, zones, price action, MT5, MetaTrader 5, Tiger.Trade, TradingView, reversal zones, non-repainting, supply and demand, support resistance, Renko, seconds chart, forex, futures, crypto.
+Request the Standard Edition through the official Telegram bot:
 
-*Trading involves risk. These tools are decision-support instruments, not financial advice and not a guarantee of profit.*
+**[Open @Tyumex_bot →](https://t.me/Tyumex_bot)**
+
+The bot issues access for 28 days and provides the current installer. The public GitHub repository contains the release package, screenshots, and installation notes.
+
+The installer itself can be opened without a code, but the terminal will not load new market data or allow new trades until a valid personal code is activated. Existing positions can still be closed and protected. The code is issued by [@Tyumex_bot](https://t.me/Tyumex_bot) and is not published in GitHub.
+
+- [Download the latest GitHub Release](https://github.com/Tyumex/tyumex-mt5-tools/releases/latest)
+- Current package: `TyumexTerminalStandardSetup-1.0.30.exe`
+- SHA-256: `ACCCDD3F22DD27180CF81755AE4D345C202C8325E954FBE37DFAAC397F72BA03`
+
+![Tyumex Terminal overview](docs/terminal-overview.png)
+
+## What the terminal provides
+
+- Multiple independent chart panes in one workspace, with layouts for focused or multi-market analysis.
+- Binance Spot and Binance USD-M Futures market data.
+- Local MetaTrader 5 connections, including configurable broker terminals and symbols.
+- Native tick aggregation for short periods such as 20s, 30s, and 45s, as well as standard timeframes.
+- Candles, live streaming, volume, market depth-style levels, and session-aware chart overlays.
+- Built-in SMA, EMA, RSI, MACD, and Bollinger Bands indicators.
+- MT5 trade workflow with risk-based or fixed volume, Stop Loss, Take Profit, Safe Mode, break-even, and position closing controls.
+
+![Tyumex Terminal workspace](docs/terminal-workspace.png)
+
+The Standard Edition is focused on a clean trading workspace and practical chart tools. It is not financial advice and does not guarantee profit.
+
+## Installation on Windows
+
+1. Download `TyumexTerminalStandardSetup-1.0.30.exe` from the [latest release](https://github.com/Tyumex/tyumex-mt5-tools/releases/latest), or request the current build from [@Tyumex_bot](https://t.me/Tyumex_bot).
+2. Run the installer. It creates a desktop shortcut and keeps the Standard Edition isolated from other Tyumex installations.
+3. Start **Tyumex Terminal Standard**.
+4. For Binance charts, choose the exchange and symbol in the chart header.
+5. For MT5 charts, open the settings, add the full path to the required 64-bit `terminal64.exe`, and keep that MT5 terminal running and logged in.
+
+The application uses bundled browser assets and does not require a separate Python or Node.js installation for normal use. Internet access is required for Binance data. MT5 data and trading require a locally installed and authorized MetaTrader 5 terminal.
+
+## Important notes
+
+- Enter the exact symbol name used by the selected broker in MT5.
+- Buy and Sell actions are sent immediately when the order controls are used; check volume, Stop Loss, and Take Profit before sending an order.
+- Never publish broker credentials, account numbers, license keys, or local terminal paths in issues or screenshots.
+- The public repository publishes the installer and product documentation; private development files are intentionally not included.
+
+## Support
+
+For access, current builds, activation questions, and feedback, contact [@Tyumex_bot](https://t.me/Tyumex_bot).
+
+Keywords: trading terminal, market terminal, Binance, Binance Futures, MetaTrader 5, MT5, XAUUSD, multi-chart, scalping, tick charts, custom timeframes, technical indicators, risk management.
