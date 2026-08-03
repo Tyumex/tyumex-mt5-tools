@@ -19,16 +19,15 @@ The bot issues access for 28 days and provides the current installer. The public
 The installer itself can be opened without a code, but the terminal will not load new market data or allow new trades until a valid personal code is activated. Existing positions can still be closed and protected. The code is issued by [@Tyumex_bot](https://t.me/Tyumex_bot) and is not published in GitHub.
 
 - [Download the latest GitHub Release](https://github.com/Tyumex/tyumex-mt5-tools/releases/latest)
-- Current package: TyumexTerminalStandardSetup-1.0.37.exe
-- SHA-256: 486E48893CB96A5F0247F1B482F33161B020792333C27444C207E9A745D7B22E
+- Current package: TyumexTerminalStandardSetup-1.0.38.exe
+- SHA-256: 49322CCD6E658617A3A1AFA7C179F24D31E67599DF84B7710AB00E6D01268FDF
 
 ![Tyumex Terminal overview](docs/terminal-overview.png)
 
-## What's new in 1.0.37
+## What's new in 1.0.38
 
-- Updated Standard installer to version 1.0.37.
+- Updated Standard installer to version 1.0.38 with fixes.
 - The full indicator set remains available, including the Sweep BOS and Wick Reclaim triangle settings.
-- The update keeps the full indicator set, including the Sweep BOS and Wick Reclaim triangle settings.
 
 ## What the terminal provides
 
@@ -46,7 +45,7 @@ The Standard Edition is focused on a clean trading workspace and practical chart
 
 ## Installation on Windows
 
-1. Download TyumexTerminalStandardSetup-1.0.37.exe from the latest release, or request the current build from [@Tyumex_bot](https://t.me/Tyumex_bot).
+1. Download TyumexTerminalStandardSetup-1.0.38.exe from the latest release, or request the current build from [@Tyumex_bot](https://t.me/Tyumex_bot).
 2. Run the installer. It creates a desktop shortcut and keeps the Standard Edition isolated from other Tyumex installations.
 3. Start **Tyumex Terminal Standard**.
 4. For Binance charts, choose the exchange and symbol in the chart header.
