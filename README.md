@@ -1,67 +1,104 @@
-# Tyumex Terminal — Standard Edition
+# Tyumex Terminal
 
-Desktop market terminal for multi-chart analysis and trading with Binance and MetaTrader 5. The Standard Edition is distributed as a ready-to-install Windows package.
+Windows desktop trading terminal for multi-chart market analysis. One workspace holds several independent chart panes, each on its own data source: Binance Spot, Binance USD-M Futures, an exchange data API for CME and MOEX instruments, and local MetaTrader 5 terminals. Orders are sent to MT5 directly from the chart.
 
-TradingView-style alternative for MetaTrader 5 (MT5): a modern multi-chart trading terminal with Binance and MT5 market data, technical indicators, custom short intervals and a professional workspace.
+This repository publishes the **Standard Edition** installer, screenshots and setup notes. Application sources are not part of the public package.
 
-Keywords: TradingView alternative, TradingView-style terminal, MT5 terminal, MetaTrader 5 trading terminal, multi-chart trading terminal, Binance trading terminal.
-
-[Русская версия → README.ru.md](README.ru.md)
-
-## Get 28 days of access
-
-Request the Standard Edition through the official Telegram bot:
-
-**[Open @Tyumex_bot →](https://t.me/Tyumex_bot)**
-
-The bot issues access for 28 days and provides the current installer. The public GitHub repository contains the release package, screenshots, and installation notes.
-
-The installer itself can be opened without a code, but the terminal will not load new market data or allow new trades until a valid personal code is activated. Existing positions can still be closed and protected. The code is issued by [@Tyumex_bot](https://t.me/Tyumex_bot) and is not published in GitHub.
-
-- [Download the latest GitHub Release](https://github.com/Tyumex/tyumex-mt5-tools/releases/latest)
-- Current package: TyumexTerminalStandardSetup-1.0.38.exe
-- SHA-256: 49322CCD6E658617A3A1AFA7C179F24D31E67599DF84B7710AB00E6D01268FDF
+[Русская версия -> README.ru.md](README.ru.md)
 
 ![Tyumex Terminal overview](docs/terminal-overview.png)
 
-## What's new in 1.0.38
+## Download
 
-- Updated Standard installer to version 1.0.38 with fixes.
-- The full indicator set remains available, including the Sweep BOS and Wick Reclaim triangle settings.
+| | |
+|---|---|
+| Version | **1.0.65** |
+| Package | `TyumexTerminalStandardSetup-1.0.65.exe` |
+| SHA-256 | `19A021F9CA6132E3BAF39B2AF063B894C81E832DAE2760F6E3218F2142C7D146` |
+| Platform | Windows 10 / 11, 64-bit |
 
-## What the terminal provides
+**[Download the latest release](https://github.com/Tyumex/tyumex-trading-terminal/releases/latest)**
 
-- Multiple independent chart panes in one workspace, with layouts for focused or multi-market analysis.
-- Binance Spot and Binance USD-M Futures market data.
-- Local MetaTrader 5 connections, including configurable broker terminals and symbols.
-- Native tick aggregation for short periods such as 20s, 30s, and 45s, as well as standard timeframes.
-- Candles, live streaming, volume, market depth-style levels, and session-aware chart overlays.
-- Built-in SMA, EMA, RSI, MACD, and Bollinger Bands indicators.
-- MT5 trade workflow with risk-based or fixed volume, Stop Loss, Take Profit, Safe Mode, break-even, and position closing controls.
+Verify the download before running it:
+
+```powershell
+Get-FileHash .\TyumexTerminalStandardSetup-1.0.65.exe -Algorithm SHA256
+```
+
+The printed hash must match the SHA-256 above. If it does not, do not run the file.
+
+## Access
+
+The terminal opens without a code, but it will not load new market data or accept new orders until a personal access code is activated. Existing positions can still be closed and protected without a code, so an expired key never traps you in a trade.
+
+Codes are issued for 28 days by the official Telegram bot and are never published here:
+
+**[Open @Tyumex_bot](https://t.me/Tyumex_bot)**
+
+## Features
+
+### Charts and data
+- Multiple independent panes in one workspace, each with its own source, symbol and timeframe.
+- Binance Spot and Binance USD-M Futures.
+- Exchange API data for CME and MOEX instruments, including index futures such as NQ.
+- Local MetaTrader 5 terminals, two broker slots preconfigured (Tickmill, Just2Trade) and two free slots for your own.
+- Native sub-minute aggregation: 20s, 30s and 45s candles built from ticks, alongside 1m, 3m, 5m, 15m, 30m, 1h, 4h and 1D.
+- Live streaming candles, volume, session overlays and depth-style price levels.
+
+### Analysis
+- Built-in SMA, EMA, RSI, MACD and Bollinger Bands.
+- Drawing toolbar shared across panes: trend line, ray, horizontal line, rectangle, arrow and text.
+- Drawings stay attached to price and time, so they survive timeframe and symbol switching.
+
+### Trading through MT5
+- Market and pending orders with risk-based or fixed volume sizing.
+- Stop Loss and Take Profit set before the order is sent.
+- Pending orders draggable directly on the chart.
+- Break-even shift and Safe Mode guards.
+- Position and order management from the chart, including partial and full close.
 
 ![Tyumex Terminal workspace](docs/terminal-workspace.png)
 
-The Standard Edition is focused on a clean trading workspace and practical chart tools. It is not financial advice and does not guarantee profit.
+## Installation
 
-## Installation on Windows
-
-1. Download TyumexTerminalStandardSetup-1.0.38.exe from the latest release, or request the current build from [@Tyumex_bot](https://t.me/Tyumex_bot).
-2. Run the installer. It creates a desktop shortcut and keeps the Standard Edition isolated from other Tyumex installations.
+1. Download `TyumexTerminalStandardSetup-1.0.65.exe` from the [latest release](https://github.com/Tyumex/tyumex-trading-terminal/releases/latest) and check its SHA-256.
+2. Run the installer. It creates a desktop shortcut and installs into `%LOCALAPPDATA%\Programs\Tyumex Terminal`, isolated from other Tyumex installations.
 3. Start **Tyumex Terminal Standard**.
-4. For Binance charts, choose the exchange and symbol in the chart header.
-5. For MT5 charts, open the settings, add the full path to the required 64-bit terminal64.exe, and keep that MT5 terminal running and logged in.
+4. For Binance and exchange API charts, pick the source and symbol in the chart header. Nothing else is required.
+5. For MT5 charts, open settings, add the full path to the 64-bit `terminal64.exe` of the broker you use, and keep that MT5 terminal running and logged in.
 
-The application uses bundled browser assets and does not require a separate Python or Node.js installation for normal use. Internet access is required for Binance data. MT5 data and trading require a locally installed and authorized MetaTrader 5 terminal.
+Running a newer installer over an existing installation updates it in place. The license, MT5 profiles, browser profile and managed-position state live under `%LOCALAPPDATA%\Tyumex Terminal` and survive updates.
 
-## Important notes
+No separate Python or Node.js installation is needed. Internet access is required for exchange data. MT5 data and trading require a locally installed and authorized MetaTrader 5 terminal.
 
-- Enter the exact symbol name used by the selected broker in MT5.
-- Buy and Sell actions are sent immediately when the order controls are used; check volume, Stop Loss, and Take Profit before sending an order.
-- Never publish broker credentials, account numbers, license keys, or local terminal paths in issues or screenshots.
-- The public repository publishes the installer and product documentation; private development files are intentionally not included.
+## Requirements
+
+- Windows 10 or 11, 64-bit.
+- Internet connection for Binance and exchange API market data.
+- MetaTrader 5, 64-bit, installed and logged in, for MT5 charts and trading.
+- A personal access code from [@Tyumex_bot](https://t.me/Tyumex_bot).
+
+## Security and privacy
+
+- The application serves its interface on `127.0.0.1` only. Nothing is exposed to the local network.
+- Requests are checked against DNS-rebinding attacks, so a web page cannot reach the terminal through your browser.
+- A Content-Security-Policy header and CSRF checks protect the local interface.
+- Broker credentials and API secrets are stored encrypted with Windows DPAPI, bound to your Windows account.
+- Exchange market data works out of the box without any account of yours. To trade through the exchange API instead of MT5, add your own token in settings and enable the personal token option.
+- No trading credentials, account numbers or terminal paths leave your machine.
+
+When reporting an issue, never post broker credentials, account numbers, license codes or local terminal paths, and blur them in screenshots.
+
+## Notes
+
+- Enter the exact symbol name used by your broker in MT5. Broker naming differs.
+- Buy and Sell controls send the order immediately. Check volume, Stop Loss and Take Profit before clicking.
+- The Standard Edition is a trading workspace, not a signal service. It gives no advice and guarantees no profit. All trading decisions and their outcomes are yours.
 
 ## Support
 
-For access, current builds, activation questions, and feedback, contact [@Tyumex_bot](https://t.me/Tyumex_bot).
+Access codes, current builds, activation questions and feedback: [@Tyumex_bot](https://t.me/Tyumex_bot).
 
-Keywords: trading terminal, market terminal, Binance, Binance Futures, MetaTrader 5, MT5, XAUUSD, multi-chart, scalping, tick charts, custom timeframes, technical indicators, risk management.
+---
+
+<sub>Keywords: trading terminal, market terminal, multi-chart, Binance, Binance Futures, MetaTrader 5, MT5, CME, MOEX, NQ, XAUUSD, tick charts, second charts, custom timeframes, scalping, technical indicators, risk management, Windows trading software.</sub>
