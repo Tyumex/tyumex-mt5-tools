@@ -95,6 +95,10 @@ When reporting an issue, never post broker credentials, account numbers, license
 - Buy and Sell controls send the order immediately. Check volume, Stop Loss and Take Profit before clicking.
 - The Standard Edition is a trading workspace, not a signal service. It gives no advice and guarantees no profit. All trading decisions and their outcomes are yours.
 
+## License
+
+Proprietary commercial software, not open source. The installer published here is licensed for personal use with an active access code; redistribution, resale, reverse engineering and modification are not permitted. See [LICENSE](LICENSE).
+
 ## Support
 
 Access codes, current builds, activation questions and feedback: [@Tyumex_bot](https://t.me/Tyumex_bot).
