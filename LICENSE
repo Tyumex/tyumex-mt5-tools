@@ -1,0 +1,140 @@
+Tyumex Terminal - End User License Agreement
+Copyright (c) 2026 Tyumex. All rights reserved.
+
+This is a proprietary commercial product. It is not open source. This
+repository publishes the compiled Standard Edition installer and its
+documentation only; the application source code is not licensed or
+distributed here.
+
+1. GRANT OF LICENSE
+
+Subject to this agreement and to an active personal access code issued by
+@Tyumex_bot (https://t.me/Tyumex_bot), you are granted a limited,
+non-exclusive, non-transferable, revocable license to install and use one
+copy of Tyumex Terminal Standard Edition on computers you own or control,
+for your own trading and analysis.
+
+The access code is personal. It is issued for a fixed term and may be
+revoked if this agreement is breached.
+
+2. RESTRICTIONS
+
+You may not:
+
+  a) redistribute, publish, sell, rent, lease, sublicense, or otherwise
+     make the software or any part of it available to third parties;
+  b) share, resell, publish, or transfer an access code, or use one issued
+     to another person;
+  c) reverse engineer, decompile, disassemble, unpack, or otherwise attempt
+     to derive the source code, structure, or algorithms of the software,
+     except to the extent such restriction is prohibited by applicable law;
+  d) modify, adapt, translate, or create derivative works of the software;
+  e) circumvent, disable, or tamper with licensing, activation, access
+     control, or integrity checks;
+  f) remove or alter any copyright, trademark, or proprietary notice.
+
+The name "Tyumex", the product name "Tyumex Terminal", and associated logos
+are trademarks of the author and are not licensed to you.
+
+3. NO WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. The author does not
+warrant that the software will be uninterrupted, error free, or that market
+data will be accurate, complete, or delivered without delay.
+
+4. TRADING RISK AND LIMITATION OF LIABILITY
+
+The software is a charting and order entry tool. It is not investment
+advice, a signal service, or a portfolio management service. It does not
+guarantee profit. All trading decisions, orders sent through it, and their
+financial outcomes are yours alone.
+
+Trading leveraged instruments carries a high risk of loss.
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE
+AUTHOR BE LIABLE FOR ANY TRADING LOSSES, LOST PROFITS, MISSED
+OPPORTUNITIES, DATA LOSS, BUSINESS INTERRUPTION, OR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR
+RELATED TO THE SOFTWARE OR ITS USE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGES.
+
+You are responsible for complying with the rules of your broker and
+exchange and with the laws applying to you.
+
+5. THIRD PARTY SERVICES
+
+The software connects to third party services, including exchange data
+APIs and a locally installed MetaTrader 5 terminal. Those services are
+governed by their own terms. The author is not responsible for their
+availability, data quality, or decisions.
+
+6. TERMINATION
+
+This license terminates automatically if you breach it, and ends when your
+access code expires and is not renewed. On termination you must stop using
+the software and remove it from your computers. Sections 3, 4, and 5 remain
+in effect after termination.
+
+7. NO IMPLIED RIGHTS
+
+Any right not expressly granted here is reserved by the author. Publication
+of the installer in this repository grants no license beyond section 1.
+
+Contact: https://t.me/Tyumex_bot
+
+--------------------------------------------------------------------------
+
+Tyumex Terminal - лицензионное соглашение с конечным пользователем
+Copyright (c) 2026 Tyumex. Все права защищены.
+
+Перевод приведён для удобства. При расхождении толкований преимущество
+имеет английский текст выше.
+
+Это проприетарный коммерческий продукт, не open source. В этом репозитории
+публикуются только собранный установщик стандартной версии и документация;
+исходный код приложения здесь не лицензируется и не распространяется.
+
+1. ЛИЦЕНЗИЯ. При наличии действующего персонального кода доступа,
+выданного @Tyumex_bot, вам предоставляется ограниченное, неисключительное,
+непередаваемое и отзывное право установить и использовать одну копию
+Tyumex Terminal Standard Edition на принадлежащих вам компьютерах для
+собственного анализа и торговли. Код доступа персональный, выдаётся на
+срок и может быть отозван при нарушении соглашения.
+
+2. ЗАПРЕЩЕНО: распространять, публиковать, продавать, сдавать в аренду и
+передавать программу третьим лицам; передавать, перепродавать и публиковать
+код доступа либо использовать чужой; выполнять реверс-инжиниринг,
+декомпиляцию, дизассемблирование и распаковку; изменять программу и
+создавать производные продукты; обходить и отключать проверки лицензии,
+активации и целостности; удалять уведомления об авторских правах.
+Наименования «Tyumex», «Tyumex Terminal» и логотипы вам не лицензируются.
+
+3. БЕЗ ГАРАНТИЙ. Программа поставляется «как есть», без каких-либо гарантий.
+Непрерывность работы, отсутствие ошибок, а также точность, полнота и
+своевременность рыночных данных не гарантируются.
+
+4. РИСК И ОТВЕТСТВЕННОСТЬ. Программа это инструмент построения графиков и
+отправки заявок. Она не является инвестиционной рекомендацией или сигнальным
+сервисом и не гарантирует прибыль. Все торговые решения, отправленные
+заявки и их финансовый результат остаются полностью на вас. Торговля с
+кредитным плечом несёт высокий риск потерь. В максимально допустимой законом
+степени автор не отвечает за торговые убытки, упущенную выгоду и прибыль,
+потерю данных, простой и любые прямые, косвенные, случайные, специальные
+или штрафные убытки, связанные с программой или её использованием.
+Соблюдение правил брокера и биржи и применимых к вам законов на вас.
+
+5. СТОРОННИЕ СЕРВИСЫ. Программа обращается к сторонним сервисам, включая
+биржевые API и локальный терминал MetaTrader 5. Они работают по своим
+условиям; автор не отвечает за их доступность, качество данных и решения.
+
+6. ПРЕКРАЩЕНИЕ. Лицензия прекращается автоматически при нарушении условий и
+по истечении неоплаченного кода доступа. После прекращения использование
+нужно остановить, а программу удалить. Разделы 3, 4 и 5 продолжают
+действовать.
+
+7. Все права, прямо не предоставленные здесь, сохраняются за автором.
+Публикация установщика в репозитории не даёт прав сверх раздела 1.
+
+Контакт: https://t.me/Tyumex_bot
